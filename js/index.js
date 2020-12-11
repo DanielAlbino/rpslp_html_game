@@ -1,7 +1,7 @@
 // When is loading it will add a class to the canvas element
 var canvas = document.getElementById("board");
 const arrElements = ['Rock','Paper','Scissors','Lizard','Spock'];
-const arrImg = ['../assets/choices/Rock.png','../assets/choices/Paper.png','../assets/choices/Scissor.png','../assets/choices/Lizard.png','../assets/choices/Spock.png']
+const arrImg = ['./assets/choices/Rock.png','./assets/choices/Paper.png','./assets/choices/Scissor.png','./assets/choices/Lizard.png','./assets/choices/Spock.png']
 
 var isStarted = false;
 
