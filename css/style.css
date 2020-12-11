@@ -1,0 +1,157 @@
+@font-face{
+    font-family: arcade;
+    src: url("../assets/fonts/ARCADECLASSIC.TTF");
+}
+
+*{
+    font-family: arcade;
+}
+
+#board{
+    width: 400px;
+    height: 600px;
+    background-color: black;
+}
+
+.menu_bg{
+    background: url('../assets/background/bg_menu_animated.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.playBtn{
+    cursor: pointer;
+    background: url('../assets/buttons/play_btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 30%;
+}
+
+.playBtn:hover {
+    cursor: pointer;
+    background: url('../assets/buttons/play_btn_clicked.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 30%;
+}
+
+.ruleBtn{
+    cursor: pointer;
+    background: url('../assets/buttons/rules_btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 31%;
+}
+
+.ruleBtn:hover{
+    cursor: pointer;
+    background: url('../assets/buttons/rules_btn_clicked.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 31%;
+}
+
+.backBtn{
+    cursor: pointer;
+    background: url('../assets/buttons/back_btn.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 20%;
+}
+
+.backBtn:hover{
+    cursor: pointer;
+    background: url('../assets/buttons/back_btn_clicked.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 20%;
+}
+
+
+.button {
+    width: 100px;
+    height: 35px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rulesText{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top:10px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+
+#title, #message{
+    margin-top: 30%;
+    color: white;
+    width: 400px;
+    text-align: center;
+    text-shadow: 2px 2px 5px  gray;
+}
+
+
+/* Icons to choose the play */
+#objects{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 75%;
+    width: 290px;
+}
+
+.imgObject{
+    margin: 10px;
+}
+
+.imgObject:hover {
+    cursor: pointer;
+    animation-name: light;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#player {
+    position: absolute;
+    margin-left: 150px;
+    margin-right: auto;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#enemy {
+    position: absolute;
+    margin-left: 150px;
+    margin-right: auto;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+}
+
+
+#again {
+    cursor: pointer;
+}
+
+/* ANIMATIONS */
+@keyframes light{
+    0%{
+        box-shadow:  0px 0px 0px 0px white;
+    }
+    100%{
+        box-shadow:  0px 0px 20px 10px white;
+    }
+}
